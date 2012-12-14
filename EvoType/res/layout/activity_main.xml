@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/typingField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:maxHeight="200dp"
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+
+    <Switch
+        android:id="@+id/evoTypeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/use_evo_type" />
+
+    <TextView
+        android:id="@+id/medBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="NRMDL"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/curr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/medBot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="A"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/medTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/curr"
+        android:layout_alignLeft="@+id/medBot"
+        android:layout_marginBottom="14dp"
+        android:text="TSHWB"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/medRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/curr"
+        android:layout_alignBottom="@+id/curr"
+        android:layout_toRightOf="@+id/curr"
+        android:layout_marginLeft="14dp"
+        android:text="E"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/medLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/curr"
+        android:layout_toLeftOf="@+id/curr"
+        android:layout_marginRight="14dp"
+        android:text="U"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/smlRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medRight"
+        android:layout_alignBottom="@+id/medRight"
+        android:layout_toRightOf="@+id/medRight"
+        android:layout_marginLeft="14dp"
+        android:text="I"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/smlLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medLeft"
+        android:layout_alignBottom="@+id/medLeft"
+        android:layout_toLeftOf="@+id/medLeft"
+        android:layout_marginRight="14dp"
+        android:text="O"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
